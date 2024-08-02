@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --red: #d73c3c;
+    --lightgreen: #dff1e7;
+    --darkgreen: #0c7d69;
+    --lightgrey: #87a3a6;
+    --darkgrey: #2b4246;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "karla";
+}
+
+.main {
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightgreen);
+}
+
+.background {
+    /* estilização do fundo */
+    width: 40rem;
+    height: 42rem;
+    background-color: var(--white);
+}
+
+.container {
+    /* Exclusivo para regras de espaçamento e posicionamento */
+    padding: 0 35px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    /* text-decoration: none; */
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--darkgrey);
+}
+
+.inputName {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    border: none;
+}
+
+.firstName{
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+}
+
+.firstName_label {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.firstName_input{
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid; 
+    border-color: var(--lightgrey);
+    outline: none;
+}
+/* A cor da borda só é alterada após inserir o border-style  */
+
+.lastName {
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+}
+
+.lastName_label {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.lastName_input {
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid;
+    border-color: var(--lightgrey);
+    outline: none;
+}
+
+.inputEmail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.email_label {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.email_input {
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid;
+    border-color: var(--lightgrey);
+    outline: none;
+}
+
+.queryType {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    border: none;
+}
+
+.queryType_legend {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.queryType_container {
+    width: 47.5%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid; 
+    border-color: var(--lightgrey);
+    outline: none;  
+    transition: .1s;  
+}
+
+.queryType_radio {
+    margin-left: 20px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: solid 1px var(--darkgreen);
+    border-radius: 50%;
+    transition: .1s;
+}
+
+.queryType_radio:checked {
+    background-color: var(--darkgreen);
+}
+
+.queryType_label {
+    font-size: 1rem;
+    color: var(--darkgrey);
+    margin-left: 10px;
+}
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.messageLabel {
+    font-size: .8rem;
+    color: var(--darkgrey);
+}
+
+.messageBox {
+    margin-top: 10px;
+    padding: 10px;
+    height: 7.5rem;
+    border-radius: 5px;
+    border-width: .5px;
+    border-style: solid;
+    border-color: var(--lightgrey);
+    outline: none;
+    resize: none;
+}
+
+.charCount {
+    align-self: flex-end;
+    margin-top: 10px;
+    font-size: .8rem;
+    color: var(--lightgrey);
+}
+
