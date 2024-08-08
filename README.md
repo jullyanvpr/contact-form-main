@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/simple-contact-form-c2tE7TTJ0q)
-- Live Site URL: [Netlify] (https://luminous-trifle-37b565.netlify.app)
+- Live Site URL: [Netlify](https://luminous-trifle-37b565.netlify.app)
 
 ## My process
 
