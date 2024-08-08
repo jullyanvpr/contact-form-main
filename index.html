@@ -17,38 +17,41 @@
           <!-- A tag fieldset tem valor semântico e agrupa tags relacionadas ao mesmo grupo -->
           <div class="firstName">
             <label for="inputFirstName" class="firstName_label">First name</label>
-            <input id="inputFirstName" name="firstName" class="firstName_input" type="text" pattern="[A-Za-z09]{3,20}" required>
+            <input id="inputFirstName" name="firstName" class="firstName_input border_change" type="text" pattern="[A-Za-z09]{3,20}" required>
           </div>
           <div class="lastName">
             <label for="inputLastName" class="lastName_label">Last name</label>
-            <input id="inputLastName" name="lastName" class="lastName_input"  type="text"  required>
+            <input id="inputLastName" name="lastName" class="lastName_input border_change"  type="text"  required>
           </div>
         </fieldset>
         <div class="inputEmail">
           <label for="inputEmail" class="email_label">Email</label>
-          <input id="inputEmail" type="email" class="email_input"  required>
+          <input id="inputEmail" type="email" class="email_input border_change"  required>
         </div>
         <fieldset class="queryType">
           <legend class="queryType_legend">Query Type</legend>
-          <div class="queryType_container">
+          <div class="queryType_container border_change" onclick="selectRadio('queryType_general')">
             <input type="radio" id="queryType_general" name="queryType" value="generalEnquiry" class="queryType_radio" checked>
             <label for="queryType_general" class="queryType_label">General Enquiry</label>
           </div>
-          <div class="queryType_container">
+          <div class="queryType_container border_change" onclick="selectRadio('queryType_support')">
             <input type="radio" id="queryType_support" name="queryType" value="supportRequest" class="queryType_radio">
             <label for="queryType_support" class="queryType_label">Support Request</label>
           </div>
         </fieldset>
         <div class="message">
           <label for="messageBox" class="messageLabel">Message</label>
-          <textarea name="messageBox" id="messageBox" class="messageBox" placeholder="Describe your issue here..." maxlength="450" required></textarea>
+          <textarea name="messageBox" id="messageBox" class="messageBox border_change" placeholder="Describe your issue here..." maxlength="450" required></textarea>
           <div id="charCount" class="charCount">450 characters remaining</div>
         </div>
+        <div class="consent">
+          <input type="checkbox" id="consentBox" class="consent_chkbox" name="consentBox" checked>
+          <label for="consentBox" class="consent_label">I consent to being contacted by the team</label>
+        </div>
+        <button type="submit" class="button"><span class="button_text">Submit</span></button>        
       </form>
-      <script src="script.js"></script>     
-    </div>
-    
+    </div>    
   </main>
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+function selectRadio(radioId) {
+  document.getElementById(radioId).checked = true;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const textarea = document.getElementById('messageBox');
     const charCount = document.getElementById('charCount');
